@@ -47,12 +47,13 @@ public class App
                         cave.addMonster(new Monster(type, health));
                         break;
                     case 2:
+                        
                         cave.listMonsters();
                         
                         break;
                     case 3:
                         System.out.println("Valitse hirviö, johon hyökätä: ");
-                        cave.listMonsters();
+                        cave.listMonstersAttack();
                         int id = Integer.parseInt(sc.nextLine());
                         cave.attackMonster(id);
                         break;
