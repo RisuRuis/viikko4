@@ -27,9 +27,14 @@ public class Cave implements Serializable {
 
     public void listMonsters() {
         int i = 1;
+        if (monsters.isEmpty()) {
+            System.out.println("Luola on tyhjä.");
+        } 
+        System.out.println("Luolan hirviöt:");
         for (Monster monster : monsters) {
             monster.printInfo(i);
             i++;
+
         }
     }
 
@@ -48,6 +53,7 @@ public class Cave implements Serializable {
             ObjectOutputStream caveWriter = new ObjectOutputStream(new FileOutputStream(file));
             caveWriter.writeObject(this);
             caveWriter.close();
+            System.out.println("Peli tallennettiin tiedostoon" + file + ".");
         } catch (IOException e) {
             System.out.println("Pelin tallentaminen ei onnistunut");
             e.printStackTrace();

@@ -11,7 +11,7 @@ public class App
         Cave cave = null;
         // Player newPlayer = null;
 
-        System.out.print("Anna pelaajan nimi: ");
+        System.out.println("Anna pelaajan nimi: ");
         String name = sc.nextLine();
         // newPlayer = new Player(name);
         // System.out.println(name);
@@ -29,7 +29,7 @@ public class App
             System.out.println("3) Hyökkää hirviöön");
             System.out.println("4) Tallenna peli");
             System.out.println("5) Lataa peli");
-            System.out.println("0) Lopeta ohjelma");
+            System.out.println("0) Lopeta peli");
 
 
             if(sc.hasNext()) {
@@ -74,7 +74,7 @@ public class App
                         
                         break;
                     case 0:
-                        System.out.println("Kiitos ohjelman käytöstä.");
+                        System.out.println("Peli päättyy. Kiitos pelaamisesta!");
                         exit = true;
                         break;
                     default:
