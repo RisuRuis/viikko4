@@ -11,7 +11,7 @@ public class App
         Cave cave = null;
         // Player newPlayer = null;
 
-        System.out.println("Anna pelaajan nimi: ");
+        System.out.println("Syötä pelaajan nimi: ");
         String name = sc.nextLine();
         // newPlayer = new Player(name);
         // System.out.println(name);
@@ -57,7 +57,7 @@ public class App
                         cave.attackMonster(id);
                         break;
                     case 4:
-                        System.out.println("Anna tiedoston nimi, josta peli tallentaa: ");
+                        System.out.println("Anna tiedoston nimi, johon peli tallentaa: ");
                         file = sc.nextLine();
                         cave.saveCave(file);
                         break;
